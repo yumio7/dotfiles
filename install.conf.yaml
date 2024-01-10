@@ -16,6 +16,9 @@
     ~/.config/mako: mako
     ~/.config/neofetch/config.conf: neofetch/config.conf
     ~/.config/rofi/config.rasi: rofi/config.rasi
+    ~/.config/rofi/powermenu: rofi/powermenu
+    ~/.config/rofi/colors: rofi/colors
+    ~/.config/rofi/powermenu.sh: rofi/powermenu.sh
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
     ~/.config/starship.toml: starship/starship.toml
 
