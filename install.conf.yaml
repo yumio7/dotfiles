@@ -17,6 +17,7 @@
     ~/.config/neofetch/config.conf: neofetch/config.conf
     ~/.config/rofi/config.rasi: rofi/config.rasi
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
+    ~/.config/starship.toml: starship/starship.toml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
