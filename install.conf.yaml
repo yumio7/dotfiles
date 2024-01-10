@@ -1,6 +1,24 @@
-- clean: ['~']
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~', '~/.config']
 
 - link:
     ~/.bashrc: bashrc
+    ~/.config/hypr/hyprland.conf:
+      force: true
+      path: hypr/hyprland.conf
+    ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/btop.conf: btop/btop.conf
+    ~/.config/waybar: waybar
+    ~/.config/mako: mako
+    ~/.config/neofetch/config.conf: neofetch/config.conf
+    ~/.config/rofi/config.rasi: rofi/config.rasi
+    ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodule]
 
 
