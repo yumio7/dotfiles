@@ -14,7 +14,9 @@ $php\
 [](fg:#424c5e bg:#73757e)\
 $time\
 [ ](fg:#73757e)\
-\n$character"""
+\n$username\
+$hostname\
+$character"""
 
 [directory]
 style = "fg:#171718 bg:#a2b1c1"
@@ -67,4 +69,16 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#73757e"
 format = '[[  $time ](fg:#c5c5c5 bg:#73757e)]($style)'
+
+[username]
+style_user = 'white bold'
+style_root = 'black bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '@[$hostname](bold blue) '
+disabled = false
 
