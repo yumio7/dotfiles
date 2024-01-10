@@ -3,12 +3,9 @@
     "position": "top",
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "cpu", "temperature", "pulseaudio", "network", "battery", "clock"],
-    "hyprland/mode": {
-        "format": " {}"
-    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {

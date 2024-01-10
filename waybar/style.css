@@ -24,6 +24,10 @@
 #workspaces button.visible {
 }
 
+#workspaces button:hover {
+  background: @base02;
+}
+
 #workspaces button.active {
   border-radius: 4px;
   background-color: @base02;
@@ -46,6 +50,16 @@
 
 #tray *:first-child {
   border-left: none;
+}
+
+#tray menu {
+  color: @base04;
+  background-color: @base00;
+}
+
+#tray menu * {
+  border-left: none;
+  padding: 0;
 }
 
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail, #clock, #temperature {
