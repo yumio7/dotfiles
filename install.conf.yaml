@@ -11,7 +11,7 @@
       path: hypr/hyprland.conf
     ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
     ~/.config/fish/config.fish: fish/config.fish
-    ~/.config/btop.conf: btop/btop.conf
+    ~/.config/btop/btop.conf: btop/btop.conf
     ~/.config/waybar: waybar
     ~/.config/mako: mako
     ~/.config/neofetch/config.conf: neofetch/config.conf
