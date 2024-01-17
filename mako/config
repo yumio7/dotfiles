@@ -2,26 +2,27 @@ sort=-time
 layer=overlay
 background-color=#171718
 text-color=#c5c5c5
-border-color=ba9c90
-width=300
-height=110
+border-color=#424c5eee
+width=350
+height=250
 border-size=2
-border-color=#88c0d0
-border-radius=15
-icons=0
+border-radius=10
+icons=1
+icon-location=right
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
-font=monospace 14
+font=DejaVuSansM Nerd Font 11
+text-alignment=right
 
 [urgency=low]
-border-color=#cccccc
+border-color=#424c5eee
 
 [urgency=normal]
-border-color=#d08770
+border-color=#94a0b0ee
 
 [urgency=high]
-border-color=#bf616a
+border-color=#d08770ee
 default-timeout=0
 
 [category=mpd]
