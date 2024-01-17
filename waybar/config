@@ -3,7 +3,7 @@
     "position": "top",
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window", "custom/spotify"],
     "modules-center": [],
     "modules-right": ["tray", "cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
     "hyprland/workspaces": {
@@ -26,7 +26,9 @@
     },
     "hyprland/window": {
         "max-length": 80,
-        "tooltip": false
+        "tooltip": false,
+        "format": "{}",
+        "format-alt": ""
     },
     "clock": {
         "format": "{:%a  ·  %d.%m.%Y  ·  %H:%M}",
@@ -90,10 +92,12 @@
         "tooltip": false
     },
     "custom/spotify": {
-        "interval": 1,
+        "exec": "/usr/bin/python3 /home/yumio/.config/waybar/modules/mediaplayer.py --player spotify",
+        "format": "{}  ",
         "return-type": "json",
-        "exec": "~/.config/waybar/modules/spotify.sh",
-        "exec-if": "pgrep spotify",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
         "escape": true
     },
     "custom/storage": {
@@ -109,9 +113,9 @@
         "format": "{percent}% {icon}",
         "format-alt": "{percent}% {icon}",
         "format-alt-click": "click-right",
-        "format-icons": ["󰽥", "󰽦", ""],
-        "on-scroll-down": "light -A 1",
-        "on-scroll-up": "light -U 1"
+        "format-icons": ["", "󰽥", "", "󰽦", ""],
+        "on-scroll-down": "brightnessctl set 5%-",
+        "on-scroll-up": "brightnessctl set 5%+"
     },
     "custom/weather": {
         "format": "{}",
