@@ -3,9 +3,9 @@
     "position": "top",
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces", "image#smolmiji"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "cpu", "temperature", "pulseaudio", "network", "battery", "clock"],
+    "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["tray", "cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -40,7 +40,7 @@
     "memory": {
         "interval": 30,
         "format": "{used:0.2f} / {total:0.0f} GB 󰍛",
-        "max-length": 10,
+        "max-length": 20,
         "tooltip": false
     },
     "battery": {
@@ -58,8 +58,8 @@
     },
     "temperature": {
         "critical-threshold": 80,
-	"format-critical": "{temperatureC}° ",
-	"format": "{temperatureC}° "
+	    "format-critical": "{temperatureC}° ",
+	    "format": "{temperatureC}° "
     },
     "network": {
         "format": "{icon}",

@@ -6,6 +6,10 @@
   box-shadow: none;
 }
 
+#window {
+  margin-left: 15px;
+}
+
 #waybar {
   color: @base04;
   background: @base01;
