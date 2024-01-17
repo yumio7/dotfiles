@@ -3,7 +3,7 @@
     "position": "top",
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "image#smolmiji"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "cpu", "temperature", "pulseaudio", "network", "battery", "clock"],
     "hyprland/workspaces": {
@@ -141,5 +141,10 @@
     },
     "tray": {
         "icon-size": 18
+    },
+    "image#smolmiji": {
+        "path": "/home/yumio/.dotfiles/waybar/smolmiji.png",
+        "size": 28,
+        "interval": 5
     }
 }
