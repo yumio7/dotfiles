@@ -7,3 +7,5 @@ end
 fish_add_path /home/yumio/.spicetify
 
 fish_ssh_agent
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/
