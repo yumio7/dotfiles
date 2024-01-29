@@ -5,7 +5,7 @@
 
     "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window", "custom/spotify"],
     "modules-center": [],
-    "modules-right": ["tray", "cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["tray", "custom/wtfisanupdate", "cpu", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -150,5 +150,12 @@
         "path": "/home/yumio/.dotfiles/waybar/smolmiji.png",
         "size": 28,
         "interval": 5
+    },
+    "custom/wtfisanupdate": {
+        "format": "{}",
+        "exec": "~/.config/waybar/modules/update.sh",
+        "on-click": "~/.config/waybar/modules/update.sh update",
+        "interval": 300,
+        "tooltip": true
     }
 }
