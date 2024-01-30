@@ -21,6 +21,7 @@
     ~/.config/rofi/powermenu.sh: rofi/powermenu.sh
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
     ~/.config/starship.toml: starship/starship.toml
+    ~/.config/lf: lf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
