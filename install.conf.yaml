@@ -12,6 +12,7 @@
     ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/btop/btop.conf: btop/btop.conf
+    ~/.config/btop/themes/nord.theme: btop/nord.theme
     ~/.config/waybar: waybar
     ~/.config/mako: mako
     ~/.config/neofetch/config.conf: neofetch/config.conf
