@@ -1,12 +1,15 @@
 format = """
 [░▒▓](#ba9c90)\
-[ 󰣇 ](bg:#ba9c90 fg:#171718)\
+[ 󰲓 ](bg:#ba9c90 fg:#171718)\
 [](bg:#a2b1c1 fg:#ba9c90)\
 $directory\
 [](fg:#a2b1c1 bg:#4e5a6e)\
 $git_branch\
 $git_status\
 [](fg:#4e5a6e bg:#424c5e)\
+$docker_context\
+$container\
+$python\
 $nodejs\
 $rust\
 $golang\
@@ -25,6 +28,7 @@ truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
+"Documents/gensou" = "󰚀 "
 "Documents" = "󰈙 "
 "Downloads" = " "
 "Music" = " "
@@ -40,7 +44,20 @@ style = "bg:#4e5a6e"
 format = '[[($all_status$ahead_behind )](fg:#94a0b0 bg:#4e5a6e)]($style)'
 
 [docker_context]
-symbol = "🐳"
+symbol = "󰡨"
+style = "bg:#424c5e"
+format = '[[ $symbol ($version) ](fg:#a2b1c1 bg:#424c5e)]($style)'
+only_with_files = true
+detect_files = [ "docker-compose.yml", "docker-compose.yaml", "Dockerfile" ]
+detect_extensions = ["Dockerfile"]
+
+[container]
+symbol = "⬢"
+style = "bg:#424c5e"
+format = '[[ $symbol ($version) ](fg:#a2b1c1 bg:#424c5e)]($style)'
+
+[python]
+symbol = ""
 style = "bg:#424c5e"
 format = '[[ $symbol ($version) ](fg:#a2b1c1 bg:#424c5e)]($style)'
 
@@ -81,4 +98,8 @@ show_always = true
 ssh_only = false
 format = '@[$hostname](bold blue) '
 disabled = false
+
+[character]
+success_symbol = "[󰄾](bold cyan)"
+error_symbol = "[󰄾](bold red)"
 
