@@ -68,7 +68,7 @@
 }
 
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, 
-#custom-spotify, #custom-weather, #custom-mail, #clock, #temperature, #custom-wtfisanupdate {
+#custom-spotify, #custom-weather, #custom-mail, #clock, #temperature, #custom-wtfisanupdate, #mpd {
   margin: 6px 2px;
   padding: 0 12px 0px 6px;
   background-color: @base02;

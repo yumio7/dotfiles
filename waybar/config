@@ -3,7 +3,7 @@
     "position": "top",
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window", "custom/spotify"],
+    "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window", "custom/spotify", "mpd"],
     "modules-center": [],
     "modules-right": ["tray", "custom/wtfisanupdate", "cpu", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
     "hyprland/workspaces": {
@@ -159,6 +159,12 @@
         "tooltip": true
     },
     "mpd": {
-        
+        "format": " {album} - {artist} - {title}",
+        "format-paused": " {album} - {artist} - {title}",
+        "format-stopped": "{}",
+        "on-click": "2>/dev/null mpc toggle",
+        "on-click-middle": "2>/dev/null mpc stop",
+        "on-scroll-up": "2>/dev/null mpc next",
+        "on-scroll-down": "2>/dev/null mpc prev"
     }
 }
