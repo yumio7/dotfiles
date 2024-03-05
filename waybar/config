@@ -157,5 +157,8 @@
         "on-click": "~/.config/waybar/modules/update.sh update",
         "interval": 300,
         "tooltip": true
+    },
+    "mpd": {
+        
     }
 }

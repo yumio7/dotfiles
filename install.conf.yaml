@@ -23,6 +23,8 @@
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
     ~/.config/starship.toml: starship/starship.toml
     ~/.config/lf: lf
+    ~/.config/ncmpcpp/config: ncmpcpp/config
+    ~/.config/ncmpcpp/songinfo: ncmpcpp/songinfo
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
