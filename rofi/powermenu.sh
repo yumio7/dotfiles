@@ -82,7 +82,7 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		swaylock -i ${HOME}/Downloads/momiwallpaper.png --indicator-idle-visible
+		hyprlock
         ;;
     $suspend)
 		run_cmd --suspend
