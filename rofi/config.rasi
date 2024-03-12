@@ -180,5 +180,5 @@ configuration {
 */
 }
 
-/* Dark theme. */
-@import "~/.cache/wal/colors-rofi-dark"
+/* theme. */
+@import ".dotfiles/rofi/theme.rasi"
