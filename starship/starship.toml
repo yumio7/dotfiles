@@ -1,12 +1,12 @@
 format = """
 [░▒▓](#ba9c90)\
 [ 󰲓 ](bg:#ba9c90 fg:#171718)\
-[](bg:#a2b1c1 fg:#ba9c90)\
+[](bg:#a2b1c1 fg:#ba9c90)\
 $directory\
-[](fg:#a2b1c1 bg:#4e5a6e)\
+[](fg:#a2b1c1 bg:#4e5a6e)\
 $git_branch\
 $git_status\
-[](fg:#4e5a6e bg:#424c5e)\
+[](fg:#4e5a6e bg:#424c5e)\
 $docker_context\
 $container\
 $python\
@@ -14,9 +14,9 @@ $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#424c5e bg:#73757e)\
+[](fg:#424c5e bg:#73757e)\
 $time\
-[ ](fg:#73757e)\
+[ ](fg:#73757e)\
 \n$username\
 $hostname\
 $character"""
