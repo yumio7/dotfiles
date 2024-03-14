@@ -26,6 +26,7 @@
     ~/.config/lf: lf
     ~/.config/ncmpcpp/config: ncmpcpp/config
     ~/.config/ncmpcpp/songinfo: ncmpcpp/songinfo
+    ~/.config/cava: cava
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
