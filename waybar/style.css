@@ -12,7 +12,7 @@
 }
 
 #waybar {
-  color: @base04;
+  color: @base0F;
   background: @base01;
 }
 
@@ -91,5 +91,5 @@
 }
 
 #temperature.critical {
-  color: @base0F;
+  background-color: rgb(175, 71, 71);
 }

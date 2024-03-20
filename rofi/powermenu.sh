@@ -65,7 +65,7 @@ run_cmd() {
 			amixer set Master mute
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			loginctl kill-user $(whoami)
+			loginctl terminate-user $(whoami)
 		fi
 	else
 		exit 0

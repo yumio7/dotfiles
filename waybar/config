@@ -59,7 +59,7 @@
         "tooltip": false
     },
     "temperature": {
-        "critical-threshold": 80,
+        "critical-threshold": 90,
 	    "format-critical": "{temperatureC}° ",
 	    "format": "{temperatureC}° "
     },
