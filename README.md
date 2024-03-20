@@ -14,3 +14,4 @@
 - **WM**: Hyprland
 - **Status Bar**: Waybar
 - **Aya**: ya
+- <a href="https://www.pixiv.net/en/artworks/102945845"> Wallpaper</a>
