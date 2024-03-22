@@ -1,0 +1,47 @@
+resize_algorithm = bilinear
+
+hotspot_x = 0.0
+hotspot_y = 0.0
+
+define_override = c7088f0f3e6c8088236ef8e1e3e70000
+define_override = top_left_corner
+define_override = nw-resize
+define_override = se-resize
+define_override = nwse-resize
+define_override = size_fdiag
+define_override = bd_double_arrow
+
+define_size = 32, scale_diagonal11.png, 500
+define_size = 32, scale_diagonal12.png, 500
+define_size = 32, scale_diagonal13.png, 500
+define_size = 32, scale_diagonal14.png, 500
+define_size = 32, scale_diagonal15.png, 500
+define_size = 32, scale_diagonal16.png, 500
+define_size = 32, scale_diagonal17.png, 500
+define_size = 32, scale_diagonal18.png, 500
+define_size = 32, scale_diagonal19.png, 500
+define_size = 32, scale_diagonal110.png, 500
+define_size = 32, scale_diagonal111.png, 500
+define_size = 32, scale_diagonal112.png, 500
+define_size = 32, scale_diagonal113.png, 500
+define_size = 32, scale_diagonal114.png, 500
+define_size = 32, scale_diagonal115.png, 500
+define_size = 32, scale_diagonal116.png, 500
+define_size = 32, scale_diagonal117.png, 500
+define_size = 32, scale_diagonal118.png, 500
+define_size = 32, scale_diagonal119.png, 500
+define_size = 32, scale_diagonal120.png, 500
+define_size = 32, scale_diagonal121.png, 500
+define_size = 32, scale_diagonal122.png, 500
+define_size = 32, scale_diagonal123.png, 500
+define_size = 32, scale_diagonal124.png, 500
+define_size = 32, scale_diagonal125.png, 500
+define_size = 32, scale_diagonal126.png, 500
+define_size = 32, scale_diagonal127.png, 500
+define_size = 32, scale_diagonal128.png, 500
+define_size = 32, scale_diagonal129.png, 500
+define_size = 32, scale_diagonal130.png, 500
+define_size = 32, scale_diagonal131.png, 500
+define_size = 32, scale_diagonal132.png, 500
+define_size = 32, scale_diagonal133.png, 500
+define_size = 32, scale_diagonal134.png, 500

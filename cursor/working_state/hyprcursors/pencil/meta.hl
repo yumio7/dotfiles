@@ -1,0 +1,8 @@
+resize_algorithm = bilinear
+
+hotspot_x = 0.0
+hotspot_y = 0.0
+
+define_override = draft
+
+define_size = 32, handwriting1.png
