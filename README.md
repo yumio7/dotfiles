@@ -13,6 +13,6 @@
 - **Shell**: Fish
 - **WM**: Hyprland
 - **Status Bar**: Waybar
-- **Aya**: ya
 - <a href="https://www.pixiv.net/en/artworks/102945845"> Wallpaper</a>
 - <a href="https://www.pixiv.net/en/artworks/14838616"> Cursor</a>
+- **Aya**: ya
