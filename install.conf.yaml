@@ -27,7 +27,8 @@
     ~/.config/ncmpcpp/config: ncmpcpp/config
     ~/.config/ncmpcpp/songinfo: ncmpcpp/songinfo
     ~/.config/cava: cava
-    ~/.local/share/icons/momicursor: cursor/theme_momicursor
+    ~/.local/share/icons/momicursor: cursor/momicursor
+    ~/.icons/default/index.theme: cursor/index.theme
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
