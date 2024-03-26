@@ -6,13 +6,9 @@
 
 - link:
     ~/.bashrc: bashrc
-    ~/.config/hypr/hyprland.conf:
-      force: true
-      path: hypr/hyprland.conf
     ~/.config/sway/config:
       force: true
       path: swayfx/config
-    ~/.config/hypr/hyprlock.conf: hypr/hyprlock.conf
     ~/.config/alacritty/alacritty.toml: alacritty/alacritty.toml
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/btop/btop.conf: btop/btop.conf
@@ -31,7 +27,6 @@
     ~/.config/ncmpcpp/songinfo: ncmpcpp/songinfo
     ~/.config/cava: cava
     ~/.local/share/icons/momicursor: cursor/momicursor
-    ~/.local/share/icons/momicursor_hypr: cursor/theme_momicursor
     ~/.icons/default/index.theme: cursor/index.theme
 
 - shell:
