@@ -3,10 +3,10 @@
     "position": "top",
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces", "image#smolmiji", "hyprland/window", "custom/spotify", "mpd"],
+    "modules-left": ["sway/workspaces", "image#smolmiji", "sway/window", "custom/spotify", "mpd"],
     "modules-center": [],
     "modules-right": ["tray", "custom/wtfisanupdate", "cpu", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
-    "hyprland/workspaces": {
+    "sway/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "1": "一",
@@ -24,7 +24,7 @@
             "default": ""
         }
     },
-    "hyprland/window": {
+    "sway/window": {
         "max-length": 80,
         "tooltip": false,
         "format": "{}",

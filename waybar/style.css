@@ -33,7 +33,7 @@
   background: @base02;
 }
 
-#workspaces button.active {
+#workspaces button.focused {
   border-radius: 4px;
   background-color: @base02;
 }
