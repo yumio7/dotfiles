@@ -274,7 +274,7 @@ exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
 exec wlsunset -l 42.36 -L -71.05 -t 3000
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec /home/yumio/.dotfiles/hypr/xdphstart
+#exec /home/yumio/.dotfiles/hypr/xdphstart
 #exec-once=xwaylandvideobridge
 exec mopidy
 exec fcitx5
