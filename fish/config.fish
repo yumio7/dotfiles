@@ -8,6 +8,7 @@ fish_add_path /home/yumio/.spicetify
 
 fish_ssh_agent
 
+export XDG_CURRENT_DESKTOP=sway
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/
 export MPD_HOST="127.0.0.1"
 
