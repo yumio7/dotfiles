@@ -1,7 +1,7 @@
 # The Momibox
 
 <p align="center">
-  <img src="https://github.com/yumio7/dotfiles/assets/67013996/da2d8556-d0e9-4c2f-a405-4749791de4bc">
+  <img src="https://github.com/yumio7/dotfiles/assets/67013996/70e8f2bf-e585-41c4-931d-1fa21c1991c9">
 </p>
 
 ---
@@ -11,7 +11,7 @@
 - **Terminal Emulator**: Alacritty
 - **Shell**: Fish
 - **WM**: Swayfx
-- **Status Bar**: Waybar
+- **Status Bar**: Eww
 - <a href="https://www.pixiv.net/en/artworks/102945845"> Wallpaper</a>
 - <a href="https://www.pixiv.net/en/artworks/14838616"> Cursor</a>
 - **Aya**: ya
