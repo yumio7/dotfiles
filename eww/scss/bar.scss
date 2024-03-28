@@ -79,11 +79,24 @@
     padding: 0px 10px;
   }
   .battery-icon {
-    margin-top: 5px;
+    margin-top: 0px;
     font-family: $icon-font;
   }
   .battery-percent {
     padding-left: 5px;
+  }
+}
+
+._volume {
+  padding: 0px;
+  .volume-inner {
+    padding: 0px 10px 0px 0px;
+  }
+  .volume-icon {
+    padding: 0px 3px 0px 10px;
+  }
+  .volume-percent {
+    padding: 0px 0px 0px 5px;
   }
 }
 

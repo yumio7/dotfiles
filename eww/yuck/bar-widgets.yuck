@@ -24,8 +24,12 @@
     :spacing 5
     :halign "end"
     (music)
-    ; (settings)
-    (battery :monitor monitor)
+    ;(settings)
+    (battery 
+      :monitor monitor)
+    (_volume 
+      :volume volume
+      :monitor monitor)
     (tray)))
 
 (defwidget launcher []
@@ -135,6 +139,28 @@
           :transition "slideright"
           :reveal {batterypercent == monitor}
           "${battery.percent}%")))))
+
+(defwidget _volume [volume monitor]
+	(box
+		:class "block _volume"
+    (eventbox
+      :onhover "eww update volpercent=${monitor}"
+      :onhoverlost "eww update volpercent=false"
+      :onclick "pavucontrol &"
+      :onscroll "~/.config/eww/scripts/volume-control.sh {}"
+      (box
+        :class "volume-inner"
+        :space-evenly false
+		    (label 
+          :class "volume-icon"
+          :text {volume <= 0 ? "󰝟" :
+			      volume < 33 ? "󰕿" :
+			  	  volume < 66 ? "󰖀" : "󰕾"})
+        (revealer
+          :class "volume-percent"
+          :reveal {volpercent == monitor}
+          :transition "slideright"
+		      (label :text "${volume}%"))))))
 
 (defwidget tray []
   (box
