@@ -28,6 +28,7 @@
     ~/.config/cava: cava
     ~/.local/share/icons/momicursor: cursor/momicursor
     ~/.icons/default/index.theme: cursor/index.theme
+    ~/.config/eww: eww
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]

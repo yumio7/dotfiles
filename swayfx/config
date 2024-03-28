@@ -13,19 +13,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
-set $term alacritty
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-set $menu rofi -show drun
-
-set $filemanager nemo
-
-### Appearance
-# window corner radius in px
-corner_radius 10
-
+# Your preferred terminal emulatorrofi -show drun -show-icons &
 gaps inner 7
 default_border pixel 2
 default_floating_border none
@@ -270,6 +258,7 @@ bindsym $mod+F8 exec brightnessctl set 10%+
 exec mako
 exec /usr/lib/polkit-kde-authentication-agent-1
 exec waybar
+#exec /home/yumio/.dotfiles/eww/launch.sh
 exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
 exec wlsunset -l 42.36 -L -71.05 -t 3000
@@ -280,5 +269,6 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec mopidy
 exec fcitx5
 exec mpd-discord-rpc
+exec mpDris2
 
 include @sysconfdir@/sway/config.d/*

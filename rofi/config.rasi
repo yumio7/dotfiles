@@ -181,4 +181,4 @@ configuration {
 }
 
 /* theme. */
-@import ".dotfiles/rofi/theme.rasi"
+@import "~/.dotfiles/rofi/theme.rasi"

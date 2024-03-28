@@ -332,7 +332,7 @@ visualizer_spectrum_dft_size = 2
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-execute_on_song_change = notify-send "Now Playing" "$(2>/dev/null mpc --format '%title% \n%artist% - %album%' current)"
+#execute_on_song_change = notify-send "Now Playing" "$(2>/dev/null mpc --format '%title% \n%artist% - %album%' current)"
 #
 ##
 ## Note: Custom command that will be executed each time player state

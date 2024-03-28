@@ -1,0 +1,25 @@
+
+(defwindow bar0
+  :monitor "0"
+  :windowtype "dock"
+  :exclusive true
+  :geometry 
+    (geometry
+      :y "0"
+      :width "100%"
+      :height "45px"
+      :anchor "top center")
+  (bar :monitor "0"))
+
+(defwindow bar1
+  :monitor "1"
+  :windowtype "dock"
+  :exclusive true
+  :geometry 
+    (geometry
+      :y "0"
+      :width "100%"
+      :height "45px"
+      :anchor "top center")
+  (bar :monitor "1"))
+
