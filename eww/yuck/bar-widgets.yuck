@@ -168,5 +168,5 @@
     (eventbox
       :cursor "pointer"
       (button
-        :onclick "~/.config/eww/scripts/open-tray.sh ${tray} &"
-        ""))))
+        :onclick "alacritty &"
+        ""))))

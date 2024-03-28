@@ -101,12 +101,13 @@
 }
 
 .tray {
-  padding: 0px;
+  padding: 0px 5px;
   background-color: $secondary;
   button {
     padding: 0px 10px;
   }
   label {
-    margin-top: 5px;
+    margin-top: 2px;
+    padding: 0px 4px 0px 0px;
   }
 }

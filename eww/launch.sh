@@ -2,7 +2,6 @@
 killall -9 eww;
 barsfile="$HOME/.config/eww/yuck/bars.yuck";
 
-pidof stalonetray || (stalonetray &) && swaymsg [class="stalonetray"] move scratchpad;
 echo "" > "$barsfile";
 count=0;
 toeval="";
