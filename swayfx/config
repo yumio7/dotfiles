@@ -267,8 +267,8 @@ bindsym $mod+F8 exec brightnessctl set 10%+
 #
 exec mako
 exec /usr/lib/polkit-kde-authentication-agent-1
-exec waybar
-#exec /home/yumio/.dotfiles/eww/launch.sh
+#exec waybar
+exec /home/yumio/.dotfiles/eww/launch.sh
 exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
 exec wlsunset -l 42.36 -L -71.05 -t 3000
