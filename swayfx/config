@@ -13,7 +13,17 @@ set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulatorrofi -show drun -show-icons &
+# Your preferred terminal emulatorr
+set $term alacritty
+#Your preferred application launcher
+set $menu rofi -show drun
+
+set $filemanager nemo
+
+### Appearance
+# window corner radius in px
+corner_radius 10
+
 gaps inner 7
 default_border pixel 2
 default_floating_border none

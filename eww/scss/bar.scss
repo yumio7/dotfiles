@@ -23,10 +23,8 @@
 .workspaces {
   color: $secondary;
   padding: 5px 5px;
-  button {
-    padding: 0px 5px;
-  }
-  .active-workspace {
+  label {
+    padding: 0px 7px 0px 4px;
     color: $foreground;
   }
 }
@@ -91,6 +89,7 @@
 
 .tray {
   padding: 0px;
+  background-color: $secondary;
   button {
     padding: 0px 10px;
   }

@@ -41,17 +41,8 @@
         :image-width 25))))
 
 (defwidget workspaces [monitor]
-  (literal :content workspaces))
-  ; (box
-  ;   :space-evenly false
-  ;   (for workspace in workspaces
-  ;     (eventbox
-  ;       :cursor "pointer"
-  ;       :visible {workspace.output == monitor ? true : false}
-  ;       (button
-  ;         :class {workspace.focused ? "active-workspace" : ""}
-  ;         :onclick "swaymsg workspace ${workspace.name}"
-  ;         "${workspace.name}")))))
+  (label
+      :text workspaces))
 
 (defwidget mode []
   (box
