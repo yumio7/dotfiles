@@ -16,14 +16,14 @@
       :space-evenly false
       (workspaces :monitor monitor)
       (mode))
-    (window))) 
+    ;(window)
+    (update))) 
 
 (defwidget right [monitor]
   (box 
     :space-evenly false
     :spacing 5
     :halign "end"
-    (update)
     (music)
     ;(settings)
     (battery 
