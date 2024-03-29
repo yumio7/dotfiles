@@ -4,7 +4,7 @@
 (deflisten window `~/.config/eww/scripts/listen-window.sh`)
 (deflisten player `~/.config/eww/scripts/listen-player.sh`)
 (deflisten battery `~/.config/eww/scripts/listen-battery.sh`)
-(deflisten updates `~/.config/eww/scripts/update.sh`)
+(defpoll updates :interval "5s" `~/.config/eww/scripts/update.sh`)
 (defpoll datetime :interval "1s" "date +'%b %d, %H:%M'")
 (defpoll volume :interval "1s" :initial "N/A" "~/.config/eww/scripts/get-vol.sh")
 (defvar batterypercent false)
