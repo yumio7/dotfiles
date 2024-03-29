@@ -94,6 +94,13 @@ output eDP-1 mode 1920x1080@60Hz position 1920,0
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+    input "type:touchpad" 
+    {
+        natural_scroll enabled
+        dwt enabled
+        tap enabled
+        middle_emulation enabled
+    }
 
 ### Key bindings
 #
