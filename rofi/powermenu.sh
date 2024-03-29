@@ -83,7 +83,7 @@ case ${chosen} in
         ;;
     $lock)
 		swaylock \
-            -i Pictures/Wallpapers/momiji3_2.png \
+            -i /home/yumio/Pictures/Wallpapers/momiji3_2.png \
             --clock \
             --indicator \
             --indicator-radius 100 \

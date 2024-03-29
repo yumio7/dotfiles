@@ -39,7 +39,7 @@
     (button 
       :class "block launcher"
       :onclick "rofi -show drun &"
-      :onrightclick "~/.config/rofi/powermenu.sh"
+      :onrightclick "~/.config/rofi/powermenu.sh &"
       (image
         :path "/home/yumio/.dotfiles/eww/smolmiji.png"
         :image-height 25
