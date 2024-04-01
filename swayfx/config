@@ -21,6 +21,8 @@ set $menu rofi -show drun
 set $filemanager nemo
 
 ### Appearance
+set $opacity 0.9
+
 # window corner radius in px
 corner_radius 10
 
@@ -34,6 +36,9 @@ blur_xray off
 blur_passes 3
 blur_radius 3
 layer_effects "waybar" blur enable;
+
+# window rules
+for_window [app_id="code-url-handler"] opacity $opacity
 
 shadows on
 shadows_on_csd off
