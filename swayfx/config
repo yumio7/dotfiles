@@ -59,7 +59,7 @@ dim_inactive_colors.unfocused #000000FF
 dim_inactive_colors.urgent #900000FF
 
 # Move minimized windows into Scratchpad (enable|disable)
-scratchpad_minimize disable
+scratchpad_minimize enable
 
 ### Output configuration
 #
@@ -223,7 +223,8 @@ output eDP-1 mode 1920x1080@60Hz position 1920,0
 #
 # Resizing containers:
 #
-mode "resize" {
+mode "resize" 
+{
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -281,6 +282,7 @@ exec mako
 exec /usr/lib/polkit-kde-authentication-agent-1
 #exec waybar
 exec /home/yumio/.dotfiles/eww/launch.sh
+exec mopidy
 exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
 exec wlsunset -l 42.36 -L -71.05 -t 3000
@@ -288,7 +290,6 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 #exec /home/yumio/.dotfiles/hypr/xdphstart
 #exec-once=xwaylandvideobridge
-exec mopidy
 exec fcitx5
 exec mpd-discord-rpc
 exec mpDris2

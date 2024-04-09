@@ -35,7 +35,7 @@
 
 (defwidget launcher []
   (eventbox
-    :cursor "pointer"
+    :cursor "help"
     (button 
       :class "block launcher"
       :onclick "rofi -show drun &"
@@ -145,6 +145,7 @@
 	(box
 		:class "block _volume"
     (eventbox
+      :cursor "ns-resize"
       :onhover "eww update volpercent=${monitor}"
       :onhoverlost "eww update volpercent=false"
       :onclick "pavucontrol &"
@@ -174,8 +175,9 @@
 
 (defwidget update []
   (eventbox
+    :cursor "pointer"
     :class "block update"
-    :onclick "~/.config/eww/scripts/update.sh update &"
+    :onclick "~/.config/eww/scripts/update.sh update &; eww update updates `~/.config/eww/scripts/update.sh`"
     :visible {updates != ""}
     (box
       :class "update-box"
