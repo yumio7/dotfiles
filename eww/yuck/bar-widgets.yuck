@@ -177,7 +177,7 @@
   (eventbox
     :cursor "pointer"
     :class "block update"
-    :onclick "~/.config/eww/scripts/update.sh update &; eww update updates `~/.config/eww/scripts/update.sh`"
+    :onclick "eww update updates=\"\" && ~/.config/eww/scripts/update.sh update &"
     :visible {updates != ""}
     (box
       :class "update-box"
