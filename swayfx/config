@@ -20,6 +20,9 @@ set $menu rofi -show drun
 
 set $filemanager nemo
 
+set $cursor_theme momicursor
+set $cursor_size 32
+
 ### Appearance
 set $opacity 0.9
 
@@ -60,6 +63,8 @@ dim_inactive_colors.urgent #900000FF
 
 # Move minimized windows into Scratchpad (enable|disable)
 scratchpad_minimize enable
+
+seat seat0 xcursor_theme $cursor_theme $cursor_size
 
 ### Output configuration
 #
@@ -256,6 +261,7 @@ bindsym $mod+l exec ~/.config/rofi/powermenu.sh
 bindsym $mod+Shift+s exec grimshot copy area
 bindsym $mod+F7 exec brightnessctl set 10%-
 bindsym $mod+F8 exec brightnessctl set 10%+
+bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
 
 #
 # Status Bar:
@@ -281,7 +287,7 @@ bindsym $mod+F8 exec brightnessctl set 10%+
 exec mako
 exec /usr/lib/polkit-kde-authentication-agent-1
 #exec waybar
-exec /home/yumio/.dotfiles/eww/launch.sh
+exec /home/yumio/.config/eww/launch.sh
 exec mopidy
 exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
