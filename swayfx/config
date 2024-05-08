@@ -62,7 +62,7 @@ dim_inactive_colors.unfocused #000000FF
 dim_inactive_colors.urgent #900000FF
 
 # Move minimized windows into Scratchpad (enable|disable)
-scratchpad_minimize enable
+scratchpad_minimize disable
 
 seat seat0 xcursor_theme $cursor_theme $cursor_size
 
@@ -258,7 +258,7 @@ bindsym $mod+d exec vesktop
 bindsym $mod+g exec firefox
 bindsym $mod+Return exec $filemanager
 bindsym $mod+l exec ~/.config/rofi/powermenu.sh
-bindsym $mod+Shift+s exec grimshot copy area
+bindsym $mod+Shift+s exec grimshot copy anything
 bindsym $mod+F7 exec brightnessctl set 10%-
 bindsym $mod+F8 exec brightnessctl set 10%+
 bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
@@ -297,7 +297,7 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 #exec /home/yumio/.dotfiles/hypr/xdphstart
 #exec-once=xwaylandvideobridge
 exec fcitx5
-exec mpd-discord-rpc
 exec mpDris2
+exec premid
 
 include @sysconfdir@/sway/config.d/*
