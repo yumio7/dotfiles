@@ -1,0 +1,1 @@
+Small modification to Touhou Project GRUB theme by [Juan Angeles Hernandez](https://github.com/JohnKun136NVCP)
