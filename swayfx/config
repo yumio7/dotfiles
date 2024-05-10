@@ -255,7 +255,7 @@ mode "resize"
 # OTHER BINDINGS
 #
 bindsym $mod+d exec vesktop
-bindsym $mod+g exec firefox
+bindsym $mod+g exec opera
 bindsym $mod+Return exec $filemanager
 bindsym $mod+l exec ~/.config/rofi/powermenu.sh
 bindsym $mod+Shift+s exec grimshot copy anything
