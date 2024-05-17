@@ -285,10 +285,11 @@ bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
 # AUTOSTART
 #
 exec mako
-exec /usr/lib/polkit-kde-authentication-agent-1
+exec lxsession
 #exec waybar
 exec /home/yumio/.config/eww/launch.sh
 exec mopidy
+exec mpd-discord-rpc
 exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
 exec wlsunset -l 42.36 -L -71.05 -t 3000
