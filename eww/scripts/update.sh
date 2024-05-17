@@ -8,7 +8,7 @@ if [ ! -f /etc/arch-release ]; then
 fi
 
 # Calculate updates for each service
-AUR=$(paru -Qua | wc -l)
+AUR=$(yay -Qua | wc -l)
 OFFICIAL=$(checkupdates | wc -l)
 
 # Case/switch for each service updates
@@ -19,7 +19,7 @@ esac
 
 # If the parameter is "update", update all services
 if [ "$1" = "update" ]; then
-    alacritty -T update-sys -e paru -Syu
+    alacritty -T update-sys -e yay -Syu
 fi
 
 # If there aren't any parameters, return the total number of updates
