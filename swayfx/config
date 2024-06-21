@@ -299,6 +299,5 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 #exec-once=xwaylandvideobridge
 exec fcitx5
 exec mpDris2
-exec premid
 
 include @sysconfdir@/sway/config.d/*
