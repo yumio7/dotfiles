@@ -286,17 +286,15 @@ bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
 #
 exec mako
 exec lxsession
-#exec waybar
 exec /home/yumio/.config/eww/launch.sh
-exec mopidy
+exec playerctld daemon
+exec systemctl --user start mopidy
 exec mpd-discord-rpc
 exec wal -s -t -R
 exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
 exec wlsunset -l 42.36 -L -71.05 -t 3000
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-#exec /home/yumio/.dotfiles/hypr/xdphstart
-#exec-once=xwaylandvideobridge
 exec fcitx5
 exec mpDris2
 

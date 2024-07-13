@@ -29,6 +29,7 @@
     ~/.local/share/icons/momicursor: cursor/momicursor
     ~/.icons/default/index.theme: cursor/index.theme
     ~/.config/eww: eww
+    ~/.config/networkmanager-dmenu/config.ini: nmrofi/config.ini
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
