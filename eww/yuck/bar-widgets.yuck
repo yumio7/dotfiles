@@ -14,7 +14,7 @@
     (box
       :class "block workspaces"
       :space-evenly false
-      (workspaces :monitor monitor)
+      (workspaces :workspaces workspaces)
       (mode))
     ;(window)
     (update))) 
@@ -45,9 +45,17 @@
         :image-height 25
         :image-width 25))))
 
-(defwidget workspaces [monitor]
-  (label
-      :text workspaces))
+(defwidget workspaces[workspaces]
+  (box :class "workspaces"
+       :orientation "horizontal"
+       :space-evenly false
+       :spacing 5
+       :halign "start"
+       (for entry in workspaces
+            (button :onclick `swaymsg workspace "${entry.name}"`
+                    :onrightclick `swaymsg workspace "${entry.name}"`
+                    :class {entry.focused ? "focused" : "unfocused"}
+                    `${entry.focused ? "" : ""} ${entry.name}`))))
 
 (defwidget mode []
   (box

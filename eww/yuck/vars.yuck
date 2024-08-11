@@ -1,5 +1,6 @@
 (defvar eww "eww -c $HOME/.config/eww")
-(deflisten workspaces `~/.config/eww/scripts/listen-workspaces.sh`)
+(deflisten workspaces :initial ""
+  `~/.config/eww/scripts/listen-workspaces.sh`)
 (deflisten mode `~/.config/eww/scripts/listen-mode.sh`)
 (deflisten window `~/.config/eww/scripts/listen-window.sh`)
 (deflisten player `~/.config/eww/scripts/listen-player.sh`)
