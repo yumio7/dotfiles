@@ -14,3 +14,4 @@ echo $IMGFILE
 
 NATIVE_WIDTH=$(identify -format '%w' "$IMGFILE")
 feh -g 1600x900 --scale-down $IMGFILE
+#xdotool sleep 2 search --class feh key w

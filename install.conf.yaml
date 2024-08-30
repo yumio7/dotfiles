@@ -30,6 +30,7 @@
     ~/.icons/default/index.theme: cursor/index.theme
     ~/.config/eww: eww
     ~/.config/networkmanager-dmenu/config.ini: nmrofi/config.ini
+    ~/.config/mpDris2/mpDris2.conf: mpDris2/mpDris2.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
