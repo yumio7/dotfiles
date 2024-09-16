@@ -23,14 +23,14 @@
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
     ~/.config/starship.toml: starship/starship.toml
     ~/.config/lf: lf
-    ~/.config/ncmpcpp/config: ncmpcpp/config
-    ~/.config/ncmpcpp/songinfo: ncmpcpp/songinfo
+    ~/.config/ncmpcpp: ncmpcpp
     ~/.config/cava: cava
     ~/.local/share/icons/momicursor: cursor/momicursor
     ~/.icons/default/index.theme: cursor/index.theme
     ~/.config/eww: eww
     ~/.config/networkmanager-dmenu/config.ini: nmrofi/config.ini
     ~/.config/mpDris2/mpDris2.conf: mpDris2/mpDris2.conf
+    ~/.config/mpd: mpd
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
