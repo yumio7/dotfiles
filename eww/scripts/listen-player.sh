@@ -13,10 +13,10 @@ get_player() {
 }
 
 get_player;
-dbus-monitor \
-    --profile "sender=org.mpris.MediaPlayer2.mpd,member=PropertiesChanged" \
-    --profile "sender=org.mpris.MediaPlayer2.spotify,member=PropertiesChanged" \
-    --profile "member=RemoveMatch" |
-while read -r line; do
+# dbus-monitor \
+#     --profile "sender=org.mpris.MediaPlayer2.mpd,member=PropertiesChanged" \
+#     --profile "sender=org.mpris.MediaPlayer2.spotify,member=PropertiesChanged" \
+#     --profile "member=RemoveMatch" |
+while true; do
     get_player;
 done;

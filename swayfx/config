@@ -275,9 +275,44 @@ bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
 #
 # WINDOW RULES
 #
-for_window [instance="Unity"] floating enable
-for_window [instance="Godot"] floating enable
-for_window [class="feh"] floating enable
+set 
+{
+	$game inhibit_idle focus; floating enable; border none; fullscreen enable; shadows disable
+	$popup floating enable; border pixel 1; sticky enable; shadows enable
+	$video inhibit_idle fullscreen; border none; max_render_time off
+}
+for_window
+{
+#popup - floating enable; sticky enable
+	[app_id="firefox" title="^Picture-in-Picture$"] $popup
+	[app_id="stoken-gui"] $popup
+	[app_id="org.twosheds.iwgtk"] $popup
+	[app_id="iwgtk"] $popup
+	[app_id="ksysguard"] $popup
+	[app_id="net.nokyan.Resources"] $popup
+	[app_id="galculator"] $popup
+	[app_id="pavucontrol"] $popup
+	[app_id="qtalarm"] $popup
+	[app_id="deluge" title="Add Torrents*"] $popup
+
+#game - inhibit_idle focus; floating enable; border none; fullscreen enable
+	[instance="origin.exe"] $game
+	[app_id="gamescope"] $game
+	# [class="dolphin-emu" title="Dolphin (.*) \| (.*) \| (.*) \| (.*)"] $game
+	# [class="sm64ex"] $game
+	# [class="gamescope"] $game
+	# [class="steam_app.*"] $game
+	# [instance="steam_app.*"] $game
+	# [class="LLBlaze.x86_64"] $game
+	# [app_id="clonehero"] $game
+
+#other
+    [instance="Unity"] floating enable
+    [instance="Godot"] floating enable
+    [class="steam"] floating enable; max_render_time off; blur disabled
+    [instance="steamwebhelper"] floating enable; max_render_time off; blur disabled
+    [class="feh"] floating enable
+}
 
 #
 # AUTOSTART

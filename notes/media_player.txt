@@ -1,0 +1,3 @@
+- mopidy package does NOT need mpd installed as well
+- mopidy-mpd and mopidy-local
+- mpDris2 will keep eww widget working, systemctl --user enable --now mpDris2
