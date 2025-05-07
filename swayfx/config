@@ -71,8 +71,12 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 # Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
 output * bg ~/Pictures/Wallpapers/momiji3_2.png fill
 #
-output DP-1 mode 1920x1080@165Hz position 1920,0
-output HDMI-A-1 mode 1920x1080@144Hz position 0,0
+output DP-1 mode 1920x1080@165Hz position 0,0
+output HDMI-A-1 mode 1920x1080@144Hz position 1920,0
+
+#output HDMI-A-1 mode 1920x1080@75Hz position 1600,0
+#output DP-3 mode --custom 1600x900 position 0, scale 1
+
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -99,6 +103,10 @@ output HDMI-A-1 mode 1920x1080@144Hz position 0,0
 #       natural_scroll enabled
 #       middle_emulation enabled
 #   }
+#
+
+    input type:tablet_tool map_to_output DP-2
+
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -309,6 +317,8 @@ for_window
 #other
     [instance="Unity"] floating enable
     [instance="Godot"] floating enable
+    [instance="UnrealEditor"] floating enable
+    [urgent=latest] focus
     [class="steam"] floating enable; max_render_time off; blur disabled
     [instance="steamwebhelper"] floating enable; max_render_time off; blur disabled
     [class="feh"] floating enable
