@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+PAGE=$((1 + $RANDOM % 7))
+AMOUNT=40
+INDEX=$((0 + $RANDOM % 39))
+RESPONSE=$(curl --silent "https://safebooru.org/index.php?page=dapi&s=post&q=index&pid=$PAGE&json=1&limit=$AMOUNT&tags=iizunamaru_megumu%20solo")
+IMG=$(echo $RESPONSE | jq -r ".[$INDEX].image")
+DIRECTORY=$(echo $RESPONSE | jq -r ".[$INDEX].directory")
+IMGLINK="https://safebooru.org//images/$DIRECTORY/$IMG"
+
+IMGFILE=$(mktemp /tmp/megumu-XXX)
+curl -s "$IMGLINK" --output "$IMGFILE"
+echo $IMGFILE
+
+NATIVE_WIDTH=$(identify -format '%w' "$IMGFILE")
+feh -g 1600x900 --scale-down $IMGFILE
