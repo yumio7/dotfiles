@@ -1,12 +1,11 @@
 # The Momibox
 
 <p align="center">
-  <img src="https://github.com/yumio7/dotfiles/assets/67013996/70e8f2bf-e585-41c4-931d-1fa21c1991c9">
+  <img src="https://github.com/user-attachments/assets/df42f75f-23f4-4ef3-b990-7a9131890cd2">
 </p>
 
 ---
 
-### Info
 - **OS**: Arch Linux
 - **Terminal Emulator**: Alacritty
 - **Shell**: Fish
