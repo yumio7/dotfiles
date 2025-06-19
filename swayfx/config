@@ -261,6 +261,7 @@ bindsym $mod+Shift+s exec grimshot copy anything
 bindsym $mod+F7 exec brightnessctl set 10%-
 bindsym $mod+F8 exec brightnessctl set 10%+
 bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
+bindsym $mod+Shift+i exec ~/.dotfiles/scripts/iku
 
 #
 # Status Bar:

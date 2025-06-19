@@ -31,6 +31,7 @@
     ~/.config/networkmanager-dmenu/config.ini: nmrofi/config.ini
     ~/.config/mpDris2/mpDris2.conf: mpDris2/mpDris2.conf
     ~/.config/mpd: mpd
+    ~/.abcde.conf: abcde/abcde_mp3_lame.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
