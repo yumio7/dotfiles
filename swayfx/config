@@ -69,13 +69,14 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
-output * bg ~/Pictures/Wallpapers/momiji3_2.png fill
+output * bg ~/Pictures/Wallpapers/cheval.jpg fill
+# output * bg ~/Pictures/Wallpapers/momiji3_2.png fill
+
 #
-output DP-1 mode 1920x1080@165Hz position 0,0
+output DP-2 mode 1920x1080@165Hz position 0,0
 output HDMI-A-1 mode 1920x1080@144Hz position 1920,0
 
-#output HDMI-A-1 mode 1920x1080@75Hz position 1600,0
-#output DP-3 mode --custom 1600x900 position 0, scale 1
+#output DP-3 mode 1920x1080@240Hz position 0,0
 
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -105,7 +106,7 @@ output HDMI-A-1 mode 1920x1080@144Hz position 1920,0
 #   }
 #
 
-    input type:tablet_tool map_to_output DP-2
+    input type:tablet_tool map_to_output DP-1
 
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -253,7 +254,7 @@ mode "resize"
 #
 # OTHER BINDINGS
 #
-bindsym $mod+d exec vesktop
+bindsym $mod+d exec discord
 bindsym $mod+g exec firefox
 bindsym $mod+Return exec $filemanager
 bindsym $mod+l exec ~/.config/rofi/powermenu.sh
@@ -261,7 +262,7 @@ bindsym $mod+Shift+s exec grimshot copy anything
 bindsym $mod+F7 exec brightnessctl set 10%-
 bindsym $mod+F8 exec brightnessctl set 10%+
 bindsym $mod+Shift+m exec ~/.dotfiles/scripts/momiji
-bindsym $mod+Shift+i exec ~/.dotfiles/scripts/iku
+bindsym $mod+Shift+n exec ~/.dotfiles/scripts/cheval
 
 #
 # Status Bar:
@@ -303,6 +304,7 @@ for_window
 	[app_id="pavucontrol"] $popup
 	[app_id="qtalarm"] $popup
 	[app_id="deluge" title="Add Torrents*"] $popup
+    [app_id="com.ocenaudio.ocenaudio"] $popup
 
 #game - inhibit_idle focus; floating enable; border none; fullscreen enable
 	[instance="origin.exe"] $game
@@ -320,8 +322,8 @@ for_window
     [instance="Godot"] floating enable
     [instance="UnrealEditor"] floating enable
     [urgent=latest] focus
-    [class="steam"] floating enable; max_render_time off; blur disabled
-    [instance="steamwebhelper"] floating enable; max_render_time off; blur disabled
+    [class="steam"] max_render_time off; blur disabled
+    [instance="steamwebhelper"] max_render_time off; blur disabled
     [class="feh"] floating enable
 }
 
@@ -335,10 +337,11 @@ exec playerctld daemon
 exec systemctl --user start mopidy
 exec mpd-discord-rpc
 exec wal -s -t -R
-exec swaybg -i ~/Pictures/Wallpapers/momiji3_2.png
+exec swaybg -i ~/Pictures/Wallpapers/cheval.jpg -m fill
 exec wlsunset -l 42.36 -L -71.05 -t 3000
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec fcitx5
+exec otd-daemon
 
 include @sysconfdir@/sway/config.d/*
