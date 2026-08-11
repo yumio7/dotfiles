@@ -15,7 +15,6 @@
     ~/.config/btop/themes/nord.theme: btop/nord.theme
     ~/.config/waybar: waybar
     ~/.config/mako: mako
-    ~/.config/neofetch/config.conf: neofetch/config.conf
     ~/.config/fastfetch/config.jsonc: fastfetch/config.jsonc
     ~/.config/rofi/config.rasi: rofi/config.rasi
     ~/.config/rofi/powermenu: rofi/powermenu
