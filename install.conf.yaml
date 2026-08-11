@@ -16,6 +16,7 @@
     ~/.config/waybar: waybar
     ~/.config/mako: mako
     ~/.config/neofetch/config.conf: neofetch/config.conf
+    ~/.config/fastfetch/config.jsonc: fastfetch/config.jsonc
     ~/.config/rofi/config.rasi: rofi/config.rasi
     ~/.config/rofi/powermenu: rofi/powermenu
     ~/.config/rofi/colors: rofi/colors
@@ -25,8 +26,6 @@
     ~/.config/lf: lf
     ~/.config/ncmpcpp: ncmpcpp
     ~/.config/cava: cava
-    ~/.local/share/icons/momicursor: cursor/momicursor
-    ~/.icons/default/index.theme: cursor/index.theme
     ~/.config/eww: eww
     ~/.config/networkmanager-dmenu/config.ini: nmrofi/config.ini
     ~/.config/mpDris2/mpDris2.conf: mpDris2/mpDris2.conf
