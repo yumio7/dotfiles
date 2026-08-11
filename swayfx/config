@@ -1,9 +1,3 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -20,7 +14,7 @@ set $menu rofi -show drun
 
 set $filemanager nemo
 
-set $cursor_theme momicursor
+set $cursor_theme chevalcursor
 set $cursor_size 32
 
 ### Appearance
@@ -39,6 +33,8 @@ blur_xray off
 blur_passes 3
 blur_radius 3
 layer_effects "waybar" blur enable;
+
+animation_duration_ms 250
 
 # window rules
 for_window [app_id="code-url-handler"] opacity $opacity
@@ -106,7 +102,9 @@ output HDMI-A-1 mode 1920x1080@144Hz position 1920,0
 #   }
 #
 
-    input type:tablet_tool map_to_output DP-1
+input "OpenTabletDriver Virtual Tablet" {
+    map_to_output DP-2
+}
 
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -335,9 +333,9 @@ exec lxsession
 exec /home/yumio/.config/eww/launch.sh
 exec playerctld daemon
 exec systemctl --user start mopidy
-exec mpd-discord-rpc
+# exec mpd-discord-rpc
 exec wal -s -t -R
-exec swaybg -i ~/Pictures/Wallpapers/cheval.jpg -m fill
+exec swaybg -i ~/Pictures/Wallpapers/auracheval.png -m fill
 exec wlsunset -l 42.36 -L -71.05 -t 3000
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r

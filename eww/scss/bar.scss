@@ -1,5 +1,6 @@
 .main-bar {
   padding: 10px 10px 5px 10px;
+  font-family: $icon-font;
   color: $foreground;
 }
 
@@ -22,6 +23,7 @@
 
 .workspaces {
   color: $secondary;
+  font-family: $icon-font;
   padding: 5px 5px;
   label {
     padding: 0px 7px 0px 4px;
@@ -89,6 +91,7 @@
 
 ._volume {
   padding: 0px;
+  font-family: $icon-font;
   .volume-inner {
     padding: 0px 10px 0px 0px;
   }
@@ -114,6 +117,7 @@
 
 .update {
   padding: 0px 5px;
+  font-family: $icon-font;
   background-color: $secondary;
   .update-box {
     padding: 0px 5px;
