@@ -41,9 +41,9 @@
       :onclick "rofi -show drun &"
       :onrightclick "~/.config/rofi/powermenu.sh &"
       (image
-        :path "/home/yumio/.dotfiles/eww/smolmiji.png"
-        :image-height 25
-        :image-width 25))))
+        :path "/home/yumio/.dotfiles/eww/chevalIcon-crop.png"
+        :image-height 40
+        :image-width 35))))
 
 (defwidget workspaces[workspaces]
   (box :class "workspaces"
@@ -105,7 +105,7 @@
       (button
         :visible {player.player ? true : false}
         :onclick "playerctl -p spotify,mpd play-pause" 
-        (label :text {player.playing ? "󰏤" : "契"})))
+        (label :text {player.playing ? "󰏤" : ""})))
     (eventbox
       :cursor "pointer"
       (button
