@@ -1,6 +1,6 @@
 # The Chevalbox
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aeb60650-1bfd-4b7b-9609-249fcc5a17b1">
+  <img src="https://github.com/user-attachments/assets/578e95e6-3ede-4af9-bb82-f3beac81fdaa">
 </p>
 
 ---
