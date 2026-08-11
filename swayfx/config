@@ -64,9 +64,8 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
-output * bg ~/Pictures/Wallpapers/cheval.jpg fill
-# output * bg ~/Pictures/Wallpapers/momiji3_2.png fill
+# Wallpaper
+output * bg ~/Pictures/Wallpapers/chevalblue.jpg fill
 
 #
 output DP-2 mode 1920x1080@165Hz position 0,0
@@ -335,7 +334,7 @@ exec playerctld daemon
 exec systemctl --user start mopidy
 # exec mpd-discord-rpc
 exec wal -s -t -R
-exec swaybg -i ~/Pictures/Wallpapers/auracheval.png -m fill
+exec swaybg -i ~/Pictures/Wallpapers/chevalblue.jpg -m fill
 exec wlsunset -l 42.36 -L -71.05 -t 3000
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r

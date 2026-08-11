@@ -1,5 +1,4 @@
 # The Chevalbox
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/df42f75f-23f4-4ef3-b990-7a9131890cd2">
 </p>
@@ -11,3 +10,4 @@
 - **Shell**: Fish
 - **WM**: Swayfx
 - **Status Bar**: Eww
+- <a href="https://www.pixiv.net/artworks/147581267"> Wallpaper</a>
