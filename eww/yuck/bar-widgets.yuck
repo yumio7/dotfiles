@@ -178,7 +178,7 @@
     (eventbox
       :cursor "pointer"
       (button
-        :onclick "alacritty &"
+        :onclick "alacritty --working-directory ~ &"
         ""))))
 
 (defwidget update []
