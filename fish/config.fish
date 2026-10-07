@@ -14,3 +14,6 @@ export MPD_HOST="127.0.0.1"
 
 # Created by `pipx` on 2024-03-22 23:37:50
 set PATH $PATH /home/yumio/.local/bin
+
+alias vim="nvim"
+alias vi="nvim"

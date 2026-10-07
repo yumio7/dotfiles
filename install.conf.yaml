@@ -30,6 +30,7 @@
     ~/.config/mpDris2/mpDris2.conf: mpDris2/mpDris2.conf
     ~/.config/mpd: mpd
     ~/.abcde.conf: abcde/abcde_lossless_flac.conf
+    ~/.config/nvim: nvim
 
 - shell:
   - [git submodule update --init --recursive, Installing submodule]
