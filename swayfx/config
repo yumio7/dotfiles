@@ -14,7 +14,8 @@ set $menu rofi -show drun
 
 set $filemanager nemo
 
-set $cursor_theme chevalcursor
+#set $cursor_theme chevalcursor
+set $cursor_theme scm-cheval-grand-a46b6c96
 set $cursor_size 32
 
 ### Appearance
